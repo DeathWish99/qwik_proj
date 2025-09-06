@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "N3pcPvKR8GA=",
+  "dgSpecHash": "TMMTEiIArrs=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Kevin\\source\\repos\\Qwik.Tests\\Qwik.Tests.csproj",
+  "projectFilePath": "C:\\Users\\Kevin\\source\\repos\\QwikProject\\Qwik.Tests\\Qwik.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kevin\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "C:\\Users\\Kevin\\.nuget\\packages\\microsoft.codecoverage\\17.8.0\\microsoft.codecoverage.17.8.0.nupkg.sha512",

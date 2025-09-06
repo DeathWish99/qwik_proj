@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Qwik.Business")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9189ce98d4e4a9e274d940fdf2ebf8536a28a86f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Qwik.Business")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Qwik.Business")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

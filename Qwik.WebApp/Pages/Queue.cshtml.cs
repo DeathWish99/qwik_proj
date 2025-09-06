@@ -8,10 +8,12 @@ namespace Qwik.WebApp.Pages
     public class QueueModel : PageModel
     {
         private readonly IHttpClientFactory _httpClientFactory;
+        private readonly IConfiguration _configuration;
 
-        public QueueModel(IHttpClientFactory httpClientFactory)
+        public QueueModel(IHttpClientFactory httpClientFactory, IConfiguration configuration)
         {
             _httpClientFactory = httpClientFactory;
+            _configuration = configuration;
         }
 
         public DateTime Date { get; set; } = DateTime.Today;
@@ -23,7 +25,7 @@ namespace Qwik.WebApp.Pages
             try
             {
                 var client = _httpClientFactory.CreateClient();
-                client.BaseAddress = new Uri("https://your-api-url/");
+                client.BaseAddress = new Uri(_configuration.GetConnectionString("ApiURl") ?? "");
 
                 var response = await client.GetAsync($"api/appointments/queue/{Date:yyyy-MM-dd}");
 

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Kevin\\source\\repos\\Qwik.Tests\\Qwik.Tests.csproj": {}
+    "C:\\Users\\Kevin\\source\\repos\\QwikProject\\Qwik.Tests\\Qwik.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Kevin\\source\\repos\\Qwik.Tests\\Qwik.Tests.csproj": {
+    "C:\\Users\\Kevin\\source\\repos\\QwikProject\\Qwik.Tests\\Qwik.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kevin\\source\\repos\\Qwik.Tests\\Qwik.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\Kevin\\source\\repos\\QwikProject\\Qwik.Tests\\Qwik.Tests.csproj",
         "projectName": "Qwik.Tests",
-        "projectPath": "C:\\Users\\Kevin\\source\\repos\\Qwik.Tests\\Qwik.Tests.csproj",
+        "projectPath": "C:\\Users\\Kevin\\source\\repos\\QwikProject\\Qwik.Tests\\Qwik.Tests.csproj",
         "packagesPath": "C:\\Users\\Kevin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kevin\\source\\repos\\Qwik.Tests\\obj\\",
+        "outputPath": "C:\\Users\\Kevin\\source\\repos\\QwikProject\\Qwik.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

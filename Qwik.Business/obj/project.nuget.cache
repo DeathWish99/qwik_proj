@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6Gtb47hFXuw=",
+  "dgSpecHash": "L1s0SXXxOiA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Kevin\\source\\repos\\Qwik.Business\\Qwik.Business.csproj",
+  "projectFilePath": "C:\\Users\\Kevin\\source\\repos\\QwikProject\\Qwik.Business\\Qwik.Business.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kevin\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.8\\microsoft.entityframeworkcore.9.0.8.nupkg.sha512",
     "C:\\Users\\Kevin\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\9.0.8\\microsoft.entityframeworkcore.abstractions.9.0.8.nupkg.sha512",

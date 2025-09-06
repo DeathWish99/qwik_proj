@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "one8SGg4Omo=",
+  "dgSpecHash": "mZhEhLV4axQ=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Kevin\\source\\repos\\Qwik.WebAPI\\Qwik.WebAPI.csproj",
+  "projectFilePath": "C:\\Users\\Kevin\\source\\repos\\QwikProject\\Qwik.WebAPI\\Qwik.WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kevin\\.nuget\\packages\\autofac\\8.4.0\\autofac.8.4.0.nupkg.sha512",
     "C:\\Users\\Kevin\\.nuget\\packages\\autofac.extensions.dependencyinjection\\10.0.0\\autofac.extensions.dependencyinjection.10.0.0.nupkg.sha512",

@@ -8,10 +8,12 @@ namespace Qwik.WebApp.Pages
     public class BookModel : PageModel
     {
         private readonly IHttpClientFactory _httpClientFactory;
+        private readonly IConfiguration _configuration;
 
-        public BookModel(IHttpClientFactory httpClientFactory)
+        public BookModel(IHttpClientFactory httpClientFactory, IConfiguration configuration)
         {
             _httpClientFactory = httpClientFactory;
+            _configuration = configuration;
         }
 
         public string CustomerName { get; set; }
@@ -29,7 +31,7 @@ namespace Qwik.WebApp.Pages
             try
             {
                 var client = _httpClientFactory.CreateClient();
-                client.BaseAddress = new Uri("https://your-api-url/");  // Or appsettings.json for config
+                client.BaseAddress = new Uri(_configuration.GetConnectionString("ApiURl") ?? "");
 
                 var request = new { CustomerName, RequestedDate };
                 var response = await client.PostAsJsonAsync("api/appointments/book", request);

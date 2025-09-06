@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.Extensions.Configuration;
 
 namespace Qwik.WebApp.Pages
 {
@@ -7,10 +8,12 @@ namespace Qwik.WebApp.Pages
     public class SettingsModel : PageModel
     {
         private readonly IHttpClientFactory _httpClientFactory;
+        private readonly IConfiguration _configuration;
 
-        public SettingsModel(IHttpClientFactory httpClientFactory)
+        public SettingsModel(IHttpClientFactory httpClientFactory, IConfiguration configuration)
         {
             _httpClientFactory = httpClientFactory;
+            _configuration = configuration;
         }
 
         public int MaxAppointments { get; set; }
@@ -23,7 +26,7 @@ namespace Qwik.WebApp.Pages
             try
             {
                 var client = _httpClientFactory.CreateClient();
-                client.BaseAddress = new Uri("https://your-api-url/");
+                client.BaseAddress = new Uri(_configuration.GetConnectionString("ApiURl") ?? "");
 
                 var response = await client.PutAsync($"api/agencysettings/max?max={MaxAppointments}", null);
 
