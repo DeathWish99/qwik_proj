@@ -3,10 +3,6 @@ on:
   push:
     branches:
     - main
-
-permissions:
-  id-token: write
-  contents: read
 env:
   AZURE_WEBAPP_NAME: QwikWebAPI20250906135500
   AZURE_WEBAPP_PACKAGE_PATH: Qwik.WebAPI\publish
@@ -63,21 +59,26 @@ jobs:
       with:
         name: webapp
         path: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
+    
+    # Azure Login BEFORE deploying web app
     - name: Azure Login
-      uses: azure/login@v1
+      uses: azure/login@v2
       with:
         client-id: d4044838-2b4f-4ca9-8a5d-2cf2b1e7fd52
         tenant-id: f552215b-0e9f-4857-ac0f-6ff229b460d0
-        subscription-id: 641c3aee-c0d9-47d2-b94f-1388dea65188
         client-secret: ${{ secrets.AZURE_CLIENT_SECRET }}
+    
     - name: Deploy to Azure WebApp
-      uses: azure/webapps-deploy@v2
+      uses: azure/webapps-deploy@v3
       with:
         app-name: ${{ env.AZURE_WEBAPP_NAME }}
         package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
-        publish-profile: ${{ secrets.QwikWebAPI20250906135500_5CCB }}
+        # Remove publish-profile since we're using service principal
+        # publish-profile: ${{ secrets.QwikWebAPI20250906135500_5CCB }}
+    
     - name: Import API into Azure API Management
       run: az apim api import --path "${{ env.AZURE_APIM_RESOURCE_PATH }}" --resource-group "${{ env.AZURE_APIM_RESOURCEGROUP }}" --service-name "${{ env.AZURE_APIM_SERVICENAME }}" --api-id "${{ env.AZURE_APIM_API_ID }}" --service-url "${{ env.AZURE_APIM_APPSERVICEURL }}" --specification-path "${{ env.API_IMPORT_SPECIFICATION_PATH }}" --specification-format OpenApi --subscription-required false
-    - name: logout
-      run: >
-        az logout
+    
+    - name: Azure Logout
+      run: az logout
+      if: always()
