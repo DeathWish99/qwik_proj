@@ -1,0 +1,27 @@
+﻿@page
+@model QueueModel
+
+<h2>View Daily Queue</h2>
+<form method="get">
+    <label>Date:</label>
+    <input type="date" asp-for="Date" />
+    <button type="submit">View</button>
+</form>
+
+@if (Model.ErrorMessage != null)
+{
+    <p class="error">@Model.ErrorMessage</p>
+}
+
+@if (Model.Appointments != null)
+{
+    <table>
+        <thead><tr><th>Token</th><th>Name</th><th>Date</th></tr></thead>
+        <tbody>
+            @foreach (var appt in Model.Appointments)
+            {
+                <tr><td>@appt.Token</td><td>@appt.CustomerName</td><td>@appt.AppointmentDate.ToShortDateString()</td></tr>
+            }
+        </tbody>
+    </table>
+}

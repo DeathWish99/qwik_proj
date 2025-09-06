@@ -1,0 +1,25 @@
+﻿@page
+@model BookModel
+
+<h2>Book Appointment</h2>
+<form method="post">
+    <label>Customer Name:</label>
+    <input asp-for="CustomerName" />
+    <span asp-validation-for="CustomerName" class="error"></span><br />
+
+    <label>Requested Date:</label>
+    <input type="date" asp-for="RequestedDate" />
+    <span asp-validation-for="RequestedDate" class="error"></span><br />
+
+    <button type="submit">Book</button>
+</form>
+
+@if (Model.ErrorMessage != null)
+{
+    <p class="error">@Model.ErrorMessage</p>
+}
+
+@if (Model.Appointment != null)
+{
+    <p>Booked! Token: @Model.Appointment.Token on @Model.Appointment.AppointmentDate.ToShortDateString()</p>
+}

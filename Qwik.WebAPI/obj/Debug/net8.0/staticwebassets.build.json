@@ -1,0 +1,23 @@
+{
+  "Version": 1,
+  "Hash": "PerDKM3zkWLWF/oWX2i7Q75WeYMWi0kFMAFKs+8aWxE=",
+  "Source": "Qwik.WebAPI",
+  "BasePath": "_content/Qwik.WebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\Kevin\\source\\repos\\Qwik.Business\\Qwik.Business.csproj",
+      "Version": 2,
+      "Source": "Qwik.Business",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+    }
+  ],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

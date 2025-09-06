@@ -1,0 +1,25 @@
+﻿@page
+@model SettingsModel
+
+<h2>Agency Settings</h2>
+<form method="post" asp-page-handler="UpdateMax">
+    <label>Max Appointments per Day:</label>
+    <input asp-for="MaxAppointments" type="number" />
+    <button type="submit">Update</button>
+</form>
+
+<form method="post" asp-page-handler="AddOffDay">
+    <label>Off Day:</label>
+    <input asp-for="OffDay" type="date" />
+    <button type="submit">Add</button>
+</form>
+
+@if (Model.ErrorMessage != null)
+{
+    <p class="error">@Model.ErrorMessage</p>
+}
+
+@if (Model.SuccessMessage != null)
+{
+    <p>@Model.SuccessMessage</p>
+}
