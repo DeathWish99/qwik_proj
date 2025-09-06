@@ -92,3 +92,9 @@ C:\Users\Kevin\source\repos\QwikProject\Qwik.WebApp\obj\Debug\net8.0\Qwik.Web.F5
 C:\Users\Kevin\source\repos\QwikProject\Qwik.WebApp\obj\Debug\net8.0\Qwik.WebApp.dll
 C:\Users\Kevin\source\repos\QwikProject\Qwik.WebApp\obj\Debug\net8.0\refint\Qwik.WebApp.dll
 C:\Users\Kevin\source\repos\QwikProject\Qwik.WebApp\obj\Debug\net8.0\Qwik.WebApp.pdb
+C:\Users\Kevin\source\repos\QwikProject\Qwik.WebApp\bin\Debug\net8.0\Qwik.WebApp.deps.json
+C:\Users\Kevin\source\repos\QwikProject\Qwik.WebApp\bin\Debug\net8.0\Qwik.WebApp.runtimeconfig.json
+C:\Users\Kevin\source\repos\QwikProject\Qwik.WebApp\bin\Debug\net8.0\Qwik.WebApp.dll
+C:\Users\Kevin\source\repos\QwikProject\Qwik.WebApp\bin\Debug\net8.0\Qwik.WebApp.pdb
+C:\Users\Kevin\source\repos\QwikProject\Qwik.WebApp\obj\Debug\net8.0\Qwik.WebApp.genruntimeconfig.cache
+C:\Users\Kevin\source\repos\QwikProject\Qwik.WebApp\obj\Debug\net8.0\ref\Qwik.WebApp.dll
