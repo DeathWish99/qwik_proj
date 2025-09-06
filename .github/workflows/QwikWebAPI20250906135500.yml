@@ -62,7 +62,9 @@ jobs:
     - name: Azure Login
       uses: azure/login@v1
       with:
-        creds: ${{ secrets.QwikWebAPIapi_SPN }}
+        client-id: d4044838-2b4f-4ca9-8a5d-2cf2b1e7fd52
+        tenant-id: f552215b-0e9f-4857-ac0f-6ff229b460d0
+        subscription-id: 641c3aee-c0d9-47d2-b94f-1388dea65188
     - name: Deploy to Azure WebApp
       uses: azure/webapps-deploy@v2
       with:
