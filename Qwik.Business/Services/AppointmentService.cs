@@ -17,7 +17,7 @@
             var date = requestedDate;
 
             // Handle off days and max appointments
-            while (settings.OffDays.Any(d => d.Date == date.Date) ||  // LINQ
+            while (settings.OffDays.Any(d => d.Date == date.Date) ||
                    (await _appointmentRepo.GetByDateAsync(date)).Count >= settings.MaxAppointmentsPerDay)
             {
                 date = date.AddDays(1);  // Overflow to next day
